@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #525252a7;
+    color: black;
+    display: flex;
+    flex-direction: column;  
+    border-radius: 20px;
+
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #888888;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previousOperation {
+    color: #777;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em; /* serve para prever a altura do número */
+}
+
+#currentOperation {
+    font-size: 3.5em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em; /* serve para prever a altura do número */
+}
+
+#buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* faz com que o elemento se divida em 4 grids com espaçamentos iguais */
+    gap: 3px;
+}
+
+#buttonsContainer button{
+    border: 1 solid ;
+    border-radius: 15px;
+    height: 3.5em;
+    font-size: 1.5em;
+    background-color: #dbdbdbdb;
+    cursor: pointer;
+}
+
+#buttonsContainer .number{
+    background-color: #f3f3f3;
+}
+
+#buttonsContainer button:hover {
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#buttonsContainer #equalBNT {
+    grid-column: span 2; /* faz com que o elemento ocupe 2 espaços do grid */
+    background-color: #424242;
+}
+
+#buttonsContainer #equalBNT:hover {
+    background-color: #2a2a2a;
+}
+
+
+
+
